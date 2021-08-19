@@ -1,0 +1,14 @@
+# make the delete key actually forward delete
+bindkey "^[[3~" delete-char
+
+# arrow keys show history of command
+# eg: type "cd" then hit up arrow
+#  you will see previous instances where you used "cd"
+bindkey "\e[A" history-search-backward
+bindkey "\e[B" history-search-forward
+
+# list ambiguous auto completes first
+set show-all-if-ambiguous on
+
+# allow case-insensitive completions
+set completion-ignore-case on
