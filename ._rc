@@ -1,0 +1,5 @@
+# Move to .zshrc, .bashrc, etc
+
+if [ -f ~/.shellrc ]; then
+  . ~/.shellrc
+fi
