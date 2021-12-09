@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+alias g="git"
+
+alias ll="ls -l"
+alias la="ls -la"

@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+
 # Move to .zshrc, .bashrc, etc
 
-if [ -f ~/.shellrc ]; then
-  . ~/.shellrc
+export SHELLRC_DIR="$HOME/projects/dotfiles/"
+if [ -f "$HOME/.shellrc" ]; then
+  . "$HOME/.shellrc"
 fi

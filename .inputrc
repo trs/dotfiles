@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # make the delete key actually forward delete
 bindkey "^[[3~" delete-char
 
