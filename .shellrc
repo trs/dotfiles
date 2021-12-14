@@ -7,12 +7,8 @@ export PATH="$HOME/.bin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-export PATH="$SHELLRC_DIR/git:$PATH"
+export PATH="$SHELLRC_DIR/git/bin:$PATH"
 
-if [ -f "$SHELLRC_DIR/.inputrc" ]; then
-  . "$SHELLRC_DIR/.inputrc"
-fi
+[ -f "$SHELLRC_DIR/.inputrc" ] && . "$SHELLRC_DIR/.inputrc"
 
-if [ -f "$SHELLRC_DIR/.aliases" ]; then
-  . "$SHELLRC_DIR/.aliases"
-fi
+[ -f "$SHELLRC_DIR/.aliases" ] && . "$SHELLRC_DIR/.aliases"
