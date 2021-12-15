@@ -19,7 +19,7 @@ export SHELLRC_DIR='"$DF_PATH"'
 
 # Source `.vimrc`
 echo '
-:source $SHELLRC_DIR/.vimrc'
+:source $SHELLRC_DIR/.vimrc
 ' >> "$DF_VIM"
 
 # Include `git/gitconfig`.
