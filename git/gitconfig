@@ -8,6 +8,7 @@
 
   p = push
   pf = push --force
+  po = push-origin
 
   l = log --oneline
   ll = log --decorate --pretty=format:'%C(yellow)[%h]%Creset%C(auto)%d%Creset - %s %C(blue)(%cr)%Creset %C(green)<%ae>%Creset'
