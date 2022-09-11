@@ -4,7 +4,10 @@
 
   co = checkout
   c = commit
+  ci = commit
   amend = commit --amend --no-edit
+
+  stash-all = stash --include-untracked
 
   p = push
   pf = push --force
@@ -17,3 +20,6 @@
 
 [code]
   editor="vim"
+
+[init]
+  defaultBranch="main"

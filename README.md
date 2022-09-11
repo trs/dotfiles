@@ -1,5 +1,27 @@
 # dotfiles
 
+## Prerequisits
+
+### [`zsh`](https://zsh.sourceforge.io/)
+
+```bash
+sudo apt install zsh
+```
+
+### [`starship`](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+
+### [`neovim`](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+
+```bash
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+```
+
 ## Installation
 
 ```bash

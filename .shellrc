@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export STARSHIP_CONFIG="$SHELLRC_DIR/config/starship.toml"
+
 eval "$(starship init ${SHELL##*/})"
 
 export PATH="$HOME/.bin:$PATH"
@@ -12,6 +14,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 export PATH="$SHELLRC_DIR/git/bin:$PATH"
 
-[ -f "$SHELLRC_DIR/.inputrc" ] && . "$SHELLRC_DIR/.inputrc"
+[[ -n $SSH_CONNECTION ]] && export EDITOR='vim' || export EDITOR='nvim'
 
-[ -f "$SHELLRC_DIR/.aliases" ] && . "$SHELLRC_DIR/.aliases"
+[[ -f "$SHELLRC_DIR/.inputrc" ]] && . "$SHELLRC_DIR/.inputrc"
+
+[[ -f "$SHELLRC_DIR/.aliases" ]] && . "$SHELLRC_DIR/.aliases"
